@@ -1,0 +1,31 @@
+timestamp: "18164053353"
+arch: ICE40
+fpga_info {
+  fpga_id: "ice40hx8k-cb132"
+  part_num: "ICE40HX8K-CB132"
+  size: "8k"
+  ice40 {
+    type: "hx8k"
+    pack: "cb132"
+  }
+}
+environment {
+  platform_id: "linux-x86-64"
+  is_windows: false
+  terminal_mode: FORCE_TERMINAL
+  theme_name: "light"
+  debug_level: 0
+  yosys_path: "/home/harishan/.apio/packages/oss-cad-suite/share/yosys"
+  trellis_path: "/home/harishan/.apio/packages/oss-cad-suite/share/trellis"
+  scons_shell_id: "bash"
+}
+apio_env_params {
+  env_name: "default"
+  board_id: "icefun"
+  top_module: "top"
+}
+target {
+  upload {
+    programmer_cmd: "icefunprog /dev/ttyACM0 $SOURCE"
+  }
+}
