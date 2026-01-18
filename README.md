@@ -33,8 +33,14 @@ Still left to do:
 ## LED Scan
 - Module provided by DevanTech to update LED grid array
 
+## Voting System
+- Interfaces with three IMUs
+- Filter out unreliable data and averages the rest
+
 # Images
 
 ## Loopback Communication 
 Loopback communication at divided clock rate (low for demo purposes)
+
+<img src="images/fsm.gif" alt="data" width="500"/>
 
